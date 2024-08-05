@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для голосования</title>
+</head>
+<body>
+
+<form action="/results" method="post">
+    <!-- action - задает url-адрес отправки формы - cюда ссылку на tomcat -->
+    <!-- <p><b>Ваше имя (до 20 символов):</b><br>
+        <input type="text" maxlength="20"></p> -->
+
+    <p><b>Выберите по Вашему мнению лучшего музыкального исполнителя из списка (1 вариант):</b><br>
+        <input type="radio" name="artist" value="a1">Teo<br>
+        <input type="radio" name="artist" value="a2">Алена Ланская<br>
+        <input type="radio" name="artist" value="a3">Александр Солодухо<br>
+        <input type="radio" name="artist" value="a4">Макс Корж<br></p>
+
+    <p><b>Выберите по Вашему мнению лучшие музыкальные жанры из списка (3-5 варианта):</b><br>
+        <input type="checkbox" name="genre" value="b1">Кантри<br>
+        <input type="checkbox" name="genre" value="b2">Джаз<br>
+        <input type="checkbox" name="genre" value="b3">Шансон<br>
+        <input type="checkbox" name="genre" value="b4">Блюз<br>
+        <input type="checkbox" name="genre" value="b5">Рок<br>
+        <input type="checkbox" name="genre" value="b6">Метал<br>
+        <input type="checkbox" name="genre" value="b7">Диско<br>
+        <input type="checkbox" name="genre" value="b8">Фолк<br>
+        <input type="checkbox" name="genre" value="b9">Электро<br>
+        <input type="checkbox" name="genre" value="b10">Фанк<br></p>
+
+    <p><b>Краткая информация о Вас (до 100 символов):</b><br>
+        <textarea name="text" cols="40" rows="3" maxlength="100"></textarea></p>
+
+    <p><input type="submit" value="Отправить">
+        <input type="reset" value="Очистить"></p>
+</form>
+
+</body>
+</html>
+
+
+
+<!-- label - подпись для поля ввода
+<p></p> - абзац
+<b></b> - выделение текста жирным цветом -->
+
+<!-- form - тег для создания формы
+Атрибуты этого метода:
+action - задает url-адрес отправки формы
+method - задает метод отправки формы
+action - абсолютный url - http://site.com
+        - относительный url - на сервер
+method
+get - посылает данные в строку запроса
+post - связь с сервером -->
+
+<!-- input - элемент внутри формы (полу формы)
+атрибуты этого тега
+type - задает тип поля
+name - задает имя поля -->
+
+<!-- проект:
+<label for="user-id">Имя пользователя:</label>
+<input type="text" name="text" id="user-id">
+<br>
+<br>
+<label for="user-pass">Пароль:</label>
+<input type="password" name="pass" id="user-pass">
+<br>
+<br> -->
